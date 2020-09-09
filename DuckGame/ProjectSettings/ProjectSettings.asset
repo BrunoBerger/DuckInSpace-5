@@ -623,10 +623,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: f493373e-af75-411a-a03b-6b2bb490dd12
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: DuckGame
+  organizationId: fishpriest
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
