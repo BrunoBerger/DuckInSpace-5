@@ -29,7 +29,7 @@ public class playerMov : MonoBehaviour
     {
       // Horizontal Movement
       userInput.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-      Debug.DrawRay(transform.position, userInput*2, Color.red);
+      // Debug.DrawRay(transform.position, userInput*2, Color.red);
       transform.Translate(userInput * movSpeed);
 
 
