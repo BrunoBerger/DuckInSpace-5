@@ -29,5 +29,12 @@ public class playerAnimation : MonoBehaviour
         }else{
             animator.SetBool("jumping", false);
         }
+
+        // check if moving sideways
+        if (Input.GetAxis("Horizontal") != 0){
+            animator.SetBool("moveSideways", true);
+        }else{
+            animator.SetBool("moveSideways", false);
+        }
     }
 }
