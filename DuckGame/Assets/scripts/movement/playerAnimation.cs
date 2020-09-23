@@ -6,6 +6,7 @@ public class playerAnimation : MonoBehaviour
 {
     public Animator animator;
     private playerMov parent;
+    private Transform myBody; 
     // Start is called before the first frame update
     void Start()
     {
