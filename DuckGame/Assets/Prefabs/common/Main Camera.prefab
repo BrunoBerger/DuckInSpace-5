@@ -98,4 +98,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   offset: {x: 2, y: 2, z: -1}
-  followSpeed: 0.152
+  followSpeed: 0.5
