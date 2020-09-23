@@ -6,11 +6,13 @@ public class playerAnimation : MonoBehaviour
 {
     public Animator animator;
     private playerMov parent;
-    private Transform myBody; 
+    private SpriteRenderer spriteRenderer;
+    // private Transform myBody; 
     // Start is called before the first frame update
     void Start()
     {
         parent = this.transform.parent.GetComponent<playerMov>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -32,9 +34,18 @@ public class playerAnimation : MonoBehaviour
         }
 
         // check if moving sideways
-        if (Input.GetAxis("Horizontal") != 0){
+        if (Input.GetAxis("Horizontal") > 0)
+        {
             animator.SetBool("moveSideways", true);
-        }else{
+            spriteRenderer.flipX = false;
+        }
+        else if (Input.GetAxis("Horizontal") < 0)
+        {
+            animator.SetBool("moveSideways", true);
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
             animator.SetBool("moveSideways", false);
         }
     }
